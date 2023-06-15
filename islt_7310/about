@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+</head>
+<body>
+    <!-- About Me Section -->
+    <h1>Your Name</h1>
+    
+    <h3>Professional Background</h3>
+    <p>Hello, I'm Sunny Mahil, a highly motivated professional in the analytics field. I hold a bachelor's degree in Paralegal Studies from Humber College and a master's degree in legal studies from Washington University in St. Louis. Currently, I am pursuing an MBA with a focus on Analytics at the University of Missouri – Columbia.</p>
+    
+    <p>I actively contribute to internal projects aimed at enhancing Artech's operations. I look forward to continuing my career in data analytics, leveraging my expanding skillset, and actively seeking opportunities for personal growth through work and independent projects.</p>
+    <br> <!-- Blank line using the br tag -->
+
+    <!-- Favorite Quote -->
+    <blockquote>
+        "You miss 100% of the shots that you don’t take – Wayne Gretzky" -Michael Scott
+    </blockquote>
+
+    <!-- Emphasized and Bold Words -->
+    <p>Outside of my educational and professional pursuits, I find joy in reading, gaming, and, above all, traveling. Traveling allows me to disconnect, unwind, and explore new horizons. It's an essential part of my life, providing a much-needed <em>escape</em> and <em>relaxation</em>.</p>
+    <p><strong>Quote:</strong> “You miss 100% of the shots that you don’t take – Wayne Gretzky” -Michael Scott</p>
+    
+    <!-- Comment Header -->
+    <!-- Code written by [Your Name] for [Assignment Name/Description] -->
+    
+</body>
+</html>
