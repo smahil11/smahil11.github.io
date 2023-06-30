@@ -7,6 +7,7 @@ nav ul {
   nav ul li {
     display: inline-block;
     margin-right: 10px;
+    position: relative; /* Added to position the dropdown menu correctly */
   }
   
   nav ul li a {
@@ -17,5 +18,16 @@ nav ul {
   
   nav ul li a:hover {
     background-color: #f2f2f2;
+  }
+  
+  nav ul li ul {
+    position: absolute; /* Added to position the dropdown menu correctly */
+    top: 100%; /* Added to position the dropdown menu below the parent link */
+    left: 0; /* Added to align the dropdown menu with the parent link */
+    display: none; /* Added to hide the dropdown menu by default */
+  }
+  
+  nav ul li:hover ul {
+    display: block; /* Added to show the dropdown menu on hover */
   }
   
