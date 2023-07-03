@@ -3,3 +3,19 @@
 h1 {
   color: #003366; /* Hex Code */
 }
+
+/* Apply styles to the first letter of the first paragraph */
+p:first-of-type::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Indent the first line of all other paragraphs after the first */
+p:not(:first-of-type)::first-line {
+    text-indent: 1em;
+}
+
+/* Style the box model for reflection paragraphs */
+.reflection {
+    padding: 10px;
+}
