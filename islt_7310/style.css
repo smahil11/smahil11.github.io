@@ -1,21 +1,51 @@
 /* style.css */
 
-h1 {
-  color: #003366; /* Hex Code */
-}
-
-/* Apply styles to the first letter of the first paragraph */
-p:first-of-type::first-letter {
+/* Apply Flexbox layout to the main section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Apply Grid layout to the navigation */
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Apply Media Queries for mobile layout */
+  @media screen and (max-width: 768px) {
+    /* Flexbox layout for mobile */
+    main {
+      flex-direction: column;
+    }
+    
+    /* Grid layout for mobile navigation */
+    nav ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  h1 {
+    color: #003366; /* Hex Code */
+  }
+  
+  /* Apply styles to the first letter of the first paragraph */
+  p:first-of-type::first-letter {
     font-size: 24px;
     font-weight: bold;
-}
-
-/* Indent the first line of all other paragraphs after the first */
-p:not(:first-of-type)::first-line {
+  }
+  
+  /* Indent the first line of all other paragraphs after the first */
+  p:not(:first-of-type)::first-line {
     text-indent: 1em;
-}
-
-/* Style the box model for reflection paragraphs */
-.reflection {
+  }
+  
+  /* Style the box model for reflection paragraphs */
+  .reflection {
     padding: 10px;
-}
+  }
+  
