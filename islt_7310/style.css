@@ -3,7 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 0;
   }
   
   /* Apply Grid layout to the navigation */
@@ -78,7 +78,6 @@ main {
   main {
     padding: 20px;
     text-align: justify;
-    margin-top: -10px;
   }
   
   footer {
