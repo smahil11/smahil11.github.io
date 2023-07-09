@@ -4,7 +4,6 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    flex-grow: 1; /* Add this line to allow main to grow and push the footer to the bottom */
   }
   
   /* Apply Grid layout to the navigation */
@@ -72,11 +71,17 @@ main {
   main {
     padding: 20px;
     text-align: justify;
+    margin-top: -10px;
+    flex-grow: 1;
   }
   
   footer {
     background-color: #f2f2f2;
     padding: 10px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
   
