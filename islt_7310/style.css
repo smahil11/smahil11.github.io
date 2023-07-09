@@ -1,56 +1,15 @@
-/* Apply Flexbox layout to the main section */
-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  /* Apply Grid layout to the navigation */
-  nav ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    list-style: none;
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote, figure, figcaption {
+    margin: 0;
     padding: 0;
   }
   
-  /* Apply Media Queries for mobile layout */
-  @media screen and (max-width: 768px) {
-    /* Flexbox layout for mobile */
-    main {
-      flex-direction: column;
-    }
-  
-    /* Grid layout for mobile navigation */
-    nav ul {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
   }
   
-  h1 {
-    color: #003366;
-    text-align: center;
-    margin-top: 0;
-  }
-  
-  /* Apply styles to the first letter of the first paragraph */
-  p:first-of-type::first-letter {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  /* Indent the first line of all other paragraphs after the first */
-  p:not(:first-of-type)::first-line {
-    text-indent: 1em;
-  }
-  
-  /* Style the box model for reflection paragraphs */
-  .reflection {
-    padding: 10px;
-  }
-  
+  /* Apply fluid layout */
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -61,58 +20,61 @@ main {
     padding: 20px;
   }
   
-  header {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 0;
+  /* Apply styles to navigation */
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #003366;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6600;
+  }
+  
+  /* Apply styles to header */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  header h1 {
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  /* Apply styles to main content */
   main {
     text-align: center;
     padding: 20px;
   }
   
+  /* Apply styles to footer */
   footer {
     background-color: #f2f2f2;
     padding: 10px;
     text-align: center;
-    margin-top: auto;
   }
   
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #003366;
-  }
-  
-  a:hover {
-    color: #ff6600;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  blockquote {
-    font-style: italic;
-    margin: 20px 0;
-    padding-left: 20px;
-    border-left: 3px solid #003366;
-  }
-  
+  /* Apply media queries for responsive layout */
   @media screen and (max-width: 768px) {
     .container {
       padding: 10px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
   
