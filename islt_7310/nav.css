@@ -7,6 +7,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  position: relative; /* Add this line to maintain proper positioning */
 }
 
 nav ul li a {
@@ -20,10 +21,14 @@ nav ul li ul {
   display: none;
   position: absolute;
   width: 150px; /* Adjust the width as needed */
+  background-color: #fff; /* Add background color for better visibility */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  z-index: 1; /* Ensure dropdown appears on top of other elements */
+  margin-top: 5px; /* Add margin to create space between main menu and dropdown */
 }
 
 nav ul li:hover ul {
-  display: inherit;
+  display: block; /* Change "inherit" to "block" to show the dropdown */
 }
 
 nav ul li ul li {

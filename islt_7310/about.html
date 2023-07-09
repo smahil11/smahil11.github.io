@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#contact.html">Contact</a></li>
-                <li><a href="#project.html">Projects</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="#contact.html">Contact</a></li>
+          <li><a href="#project.html">Projects</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- About Me Section -->
+      <!-- About Me Section -->
+      <section>
+        <h1>Sunny Mahil</h1>
+
         <section>
-            <h1>Sunny Mahil</h1>
-        
-            <section>
-                <h3>Professional Background</h3>
-                <p>Hello, I'm Sunny Mahil, a highly motivated professional in the analytics field. I hold a bachelor's degree in Paralegal Studies from Humber College and a master's degree in legal studies from Washington University in St. Louis. Currently, I am pursuing an MBA with a focus on Analytics at the University of Missouri – Columbia.</p>
-        
-                <p>I actively contribute to internal projects aimed at enhancing Artech's operations. I look forward to continuing my career in data analytics, leveraging my expanding skillset, and actively seeking opportunities for personal growth through work and independent projects.</p>
-                <br> <!-- Blank line using the br tag -->
-            </section>
-        
-            <!-- Favorite Quote -->
-            <blockquote>
-                "You miss 100% of the shots that you don’t take – Wayne Gretzky" - Michael Scott
-            </blockquote>
-        
-            <!-- Link to Resume -->
-            <section>
-                <a href="resume.pdf">Download My Resume</a>
-            </section>
+          <h3>Professional Background</h3>
+          <p>Hello, I'm Sunny Mahil, a highly motivated professional in the analytics field. I hold a bachelor's degree in Paralegal Studies from Humber College and a master's degree in legal studies from Washington University in St. Louis. Currently, I am pursuing an MBA with a focus on Analytics at the University of Missouri – Columbia.</p>
+
+          <p>I actively contribute to internal projects aimed at enhancing Artech's operations. I look forward to continuing my career in data analytics, leveraging my expanding skillset, and actively seeking opportunities for personal growth through work and independent projects.</p>
+          <br> <!-- Blank line using the br tag -->
         </section>
+
+        <!-- Favorite Quote -->
+        <blockquote>
+          "You miss 100% of the shots that you don’t take – Wayne Gretzky" - Michael Scott
+        </blockquote>
+
+        <!-- Link to Resume -->
+        <section>
+          <a href="resume.pdf">Download My Resume</a>
+        </section>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Sunny Mahil | Email: sunny.mahil@example.com</p>
+      <p>&copy; 2023 Sunny Mahil | Email: sunny.mahil@example.com</p>
     </footer>
+  </div>
 </body>
 </html>

@@ -5,6 +5,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px; /* Add padding for better spacing */
   }
   
   /* Apply Grid layout to the navigation */
@@ -22,7 +23,7 @@ main {
     main {
       flex-direction: column;
     }
-    
+  
     /* Grid layout for mobile navigation */
     nav ul {
       grid-template-columns: repeat(2, 1fr);
@@ -30,7 +31,9 @@ main {
   }
   
   h1 {
-    color: #003366; /* Hex Code */
+    color: #003366;
+    text-align: center; /* Center the heading text */
+    margin-top: 0; /* Add top margin to create space */
   }
   
   /* Apply styles to the first letter of the first paragraph */
