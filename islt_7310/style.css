@@ -4,6 +4,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    flex-grow: 1; /* Add this line to allow main to grow and push the footer to the bottom */
   }
   
   /* Apply Grid layout to the navigation */
