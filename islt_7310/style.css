@@ -3,7 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px 0;
+    padding: 20px;
   }
   
   /* Apply Grid layout to the navigation */
@@ -48,13 +48,6 @@ main {
   /* Style the box model for reflection paragraphs */
   .reflection {
     padding: 10px;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #f2f2f2;
-    padding: 10px;
-    text-align: center;
   }
   
   .container {
