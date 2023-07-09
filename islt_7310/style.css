@@ -56,6 +56,9 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
   }
   
   header {
@@ -94,12 +97,6 @@ main {
   ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
   }
   
   section {
