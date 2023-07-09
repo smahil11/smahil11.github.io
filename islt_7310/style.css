@@ -39,18 +39,19 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote, figure, figcaption {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #003366;
+    color: #003366; /* Same color as footer */
   }
   
   nav ul li a:hover {
-    color: #ff6600;
+    color: #ff6600; /* Same color as footer */
   }
   
   /* Apply styles to header */
   header {
     text-align: center;
     padding: 20px;
-    background-color: transparent; 
+    background-color: transparent;
+  }
   
   header h1 {
     color: #003366;
@@ -68,6 +69,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote, figure, figcaption {
     background-color: #f2f2f2;
     padding: 10px;
     text-align: center;
+    color: #fff; /* Set the text color for the footer */
   }
   
   /* Apply media queries for responsive layout */
