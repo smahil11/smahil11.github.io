@@ -75,6 +75,22 @@ footer {
   color: #000; /* Set the font color to black */
 }
 
+/* Apply hover effect to footer icons */
+footer img:hover {
+  transform: scale(1.1); /* Enlarge the icon by 10% on hover */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+/* Apply animation to footer */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+footer {
+  animation: fadeIn 1s ease-in-out; /* Apply the animation */
+}
+
 /* Apply media queries for responsive layout */
 @media screen and (max-width: 768px) {
   .container {
