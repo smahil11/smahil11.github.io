@@ -67,7 +67,9 @@ main {
 
 /* Apply styles to footer */
 footer {
-  background-color: #f2f2f2;
+  background-image: url("images/battle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10px;
   text-align: center;
   color: #000; /* Set the font color to black */
