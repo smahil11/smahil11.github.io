@@ -4,45 +4,49 @@ nav ul {
   margin: 0;
   padding: 0;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 nav ul li {
-  display: block;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
 }
 
 nav ul li a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #000;
+  color: #000; /* Set the font color to black */
+}
+
+nav ul li a:hover {
+  color: #ff6600;
 }
 
 nav ul li ul {
   display: none;
   position: absolute;
-  width: 150px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  min-width: 150px;
   z-index: 1;
-  margin-top: 5px;
 }
 
 nav ul li:hover ul {
   display: block;
 }
 
-nav ul li:hover {
-  position: relative;
-}
-
 nav ul li ul li {
-  width: 100%;
+  display: block;
+  margin: 0;
 }
 
-nav ul li ul li a {
-  padding: 5px 10px;
+/* Add styles to the Project dropdown */
+nav ul li ul .project-dropdown li {
+  margin: 0;
 }
 
-nav ul li ul li a:hover {
-  background-color: #f0f0f0;
+/* Apply the styles to header, main, and footer to create spacing */
+header, main, footer {
+  padding: 20px;
 }
