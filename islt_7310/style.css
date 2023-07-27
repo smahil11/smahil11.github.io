@@ -67,7 +67,7 @@ main {
 
 /* Apply styles to footer */
 footer {
-  background-image: url("../Images/battle.png"); /* Relative link to the background image */
+  background-image: url("Images/battle.png"); /* Corrected relative link to the background image */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
