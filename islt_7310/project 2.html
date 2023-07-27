@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2 - Project Games: Metacritic Video Games data and recommender</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Medium&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="#">Projects</a>
+          <ul class="project-dropdown">
+            <li><a href="projects.html">Project 1</a></li>
+            <li><a href="projects.html">Project 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Project 2 Content -->
+    <header>
+      <h1>Project Games: Metacritic Video Games data and recommender</h1>
+      <p>March 19, 2021</p>
+    </header>
+
+    <main>
+      <p>In this project, I collect data from Metacritic to do some basic EDA and build a content-based recommender system. The final recommender is deployed using Dash, and all coding is done in Python.</p>
+
+      <h2>Scraping games info from Metacritic</h2>
+      <p>The scraper is found in "scraper.ipynb" and requires requests, bs4.BeautifulSoup, re, and pandas.</p>
+      <p>The final dataset is in the file "games-data.csv".</p>
+
+      <h2>The dataset</h2>
+      <p>We want to get a dataframe with all games with columns:</p>
+      <ul>
+        <li><strong>name:</strong> The name of the game</li>
+        <li><strong>platform:</strong> Platform it was released</li>
+        <li><strong>r-date:</strong> Date it was released</li>
+        <li><strong>score:</strong> Average score given by critics (metascore)</li>
+        <li><strong>user score:</strong> Average score given by users on the website</li>
+        <li><strong>developer:</strong> Game developer</li>
+        <li><strong>genre:</strong> Genre of the game (can be multiple)</li>
+        <li><strong>players:</strong> Number of players (some games don’t have this information)</li>
+        <li><strong>critics:</strong> Number of critics reviewing the game</li>
+        <li><strong>users:</strong> Number of Metacritic users that reviewed the game</li>
+      </ul>
+      <p>All data was collected on November 10th, 2020.</p>
+
+      <h2>Steps used in scraper:</h2>
+      <ol>
+        <li>Create a dictionary "pages" that will contain the DataFrame objects from all pages. Each entry is a pandas DataFrame with data from the games on each site page. There are currently 180 pages of rated games.</li>
+        <li>For each page, create a dictionary "data_page" of empty lists to be filled with the data from each game. As each page displays 100 games, each of these lists should contain 100 elements (except for the last page).</li>
+        <li>Use requests to get into the URL of each page and BeautifulSoup to parse the HTML file.</li>
+        <li>Loop through all games on each page and scrape the relevant data. Note that ‘developer’, ‘genre’, ‘players’, ‘critics’, and ‘users’ are found on different URLs, so we need to fetch these for each game. This URL for each game is inside an "a" tag with a "title" class.</li>
+        <li>There are a couple of if's in the scraper to ensure None objects get dealt with (some games don’t have a number of players' information, for example; some games have no user reviews, given it is not yet released, and a few others).</li>
+        <li>After all data is collected (and it takes a few hours - a bit more than 15 in my laptop), all dataframes in the "pages" dictionary are concatenated to create a single one with all game data.</li>
+        <li>The dataframe is exported to a CSV file.</li>
+      </ol>
+
+      <p>I enjoy the awesome new dataset and all I can do with it!</p>
+
+      <p>As I continue to build this website out, I will include links to data sets and dashboards. Thank you for your patience!</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Sunny Mahil | Email: sunny.mahil@example.com</p>
+    </footer>
+  </div>
+</body>
+</html>
