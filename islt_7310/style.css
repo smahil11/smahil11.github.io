@@ -70,6 +70,10 @@ footer {
   padding: 10px;
   text-align: center;
   color: #000; /* Set the font color to black */
+  background-image: url("Images/battle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Apply styles to footer icons */
