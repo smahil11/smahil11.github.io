@@ -67,28 +67,17 @@ main {
 
 /* Apply styles to footer */
 footer {
-  background-image: url("Images/battle.png"); /* Corrected relative link to the background image */
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10px;
   text-align: center;
   color: #000; /* Set the font color to black */
 }
 
-/* Apply hover effect to footer icons */
-footer img:hover {
-  transform: scale(1.1); /* Enlarge the icon by 10% on hover */
-  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
-}
-
-/* Apply animation to footer */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-footer {
-  animation: fadeIn 1s ease-in-out; /* Apply the animation */
+/* Apply styles to footer icons */
+footer img {
+  vertical-align: middle;
+  width: 20px; /* Adjust the icon size */
+  height: 20px; /* Adjust the icon size */
+  margin-right: 5px; /* Add some spacing between icon and text */
 }
 
 /* Table Styles */
