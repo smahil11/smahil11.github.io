@@ -7,7 +7,7 @@ nav ul {
 }
 
 nav ul li {
-  display: block; /* Adjusted to block */
+  display: block;
 }
 
 nav ul li a {
@@ -32,7 +32,7 @@ nav ul li:hover ul {
 }
 
 nav ul li:hover {
-  position: relative; /* Added relative positioning on hover */
+  position: relative;
 }
 
 nav ul li ul li {
