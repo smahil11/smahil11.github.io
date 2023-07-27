@@ -91,19 +91,50 @@ footer {
   animation: fadeIn 1s ease-in-out; /* Apply the animation */
 }
 
-/* Media query for responsive layout */
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+thead tr {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Accessibility */
+caption {
+  caption-side: top;
+}
+
+th[scope="col"] {
+  font-weight: bold;
+}
+
+/* Responsive Table */
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
+  table {
+    font-size: 14px;
   }
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-  }
-
-  nav ul li {
-    margin: 5px;
+  th, td {
+    padding: 5px;
   }
 }
 
