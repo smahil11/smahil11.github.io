@@ -19,41 +19,39 @@
       </ul>
     </nav>
 
-    <!-- Sunny Mahil Portfolio Contact Page -->
+    <!-- Contact Page Content -->
     <header>
       <h1>Contact</h1>
     </header>
 
     <main>
-      <h2>Get in Touch</h2>
-      <table>
-        <caption>Contact Information</caption>
-        <thead>
-          <tr>
-            <th>Contact Method</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Phone</td>
-            <td>636 253 4592</td>
-          </tr>
-          <tr>
-            <td>Email</td>
-            <td><a href="mailto:smahil.88@gmail.com">smahil.88@gmail.com</a></td>
-          </tr>
-          <tr>
-            <td>LinkedIn</td>
-            <td><a href="https://www.linkedin.com/in/sunnymahil" target="_blank">https://www.linkedin.com/in/sunnymahil</a></td>
-          </tr>
-        </tbody>
-      </table>
+      <form id="contactForm" action="mailto:smahil.88@gmail.com" method="post" enctype="text/plain">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Send" class="submit-button">
+      </form>
     </main>
 
     <footer>
       <p>&copy; 2023 Sunny Mahil | Email: sunny.mahil@example.com</p>
     </footer>
   </div>
+
+  <script>
+    // Set focus to the first field on page load
+    window.onload = function() {
+      document.getElementById("firstName").focus();
+    };
+  </script>
 </body>
 </html>
