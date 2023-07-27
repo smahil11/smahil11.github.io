@@ -1,3 +1,4 @@
+/* Navigation Styles */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -6,8 +7,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
-  position: relative;
+  display: block; /* Adjusted to block */
 }
 
 nav ul li a {
@@ -29,6 +29,10 @@ nav ul li ul {
 
 nav ul li:hover ul {
   display: block;
+}
+
+nav ul li:hover {
+  position: relative; /* Added relative positioning on hover */
 }
 
 nav ul li ul li {

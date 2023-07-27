@@ -91,7 +91,7 @@ footer {
   animation: fadeIn 1s ease-in-out; /* Apply the animation */
 }
 
-/* Apply media queries for responsive layout */
+/* Media query for responsive layout */
 @media screen and (max-width: 768px) {
   .container {
     padding: 10px;
