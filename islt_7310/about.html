@@ -54,11 +54,53 @@
 
       <!-- Add the link to the resume.pdf file -->
       <p>Click <a href="resume.pdf">here</a> to view my resume.</p>
+
+      <!-- Table -->
+      <table>
+        <caption>Education and Degrees</caption>
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Major</th>
+            <th>University</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bachelor's</td>
+            <td>Paralegal Studies</td>
+            <td>Humber College</td>
+          </tr>
+          <tr>
+            <td>Master's</td>
+            <td>Legal Studies</td>
+            <td>Washington University in St. Louis</td>
+          </tr>
+          <tr>
+            <td>MBA</td>
+            <td>Analytics</td>
+            <td>University of Missouri – Columbia</td>
+          </tr>
+        </tbody>
+        <!-- tfoot (optional) -->
+        <!-- <tfoot>
+          <tr>
+            <td colspan="3">Total Degrees: 3</td>
+          </tr>
+        </tfoot> -->
+      </table>
     </main>
 
     <footer>
       <p>&copy; 2023 Sunny Mahil | Email: sunny.mahil@example.com | Phone: 888-888-8888</p>
     </footer>
   </div>
+
+  <script>
+    // Set focus to the first field on page load
+    window.onload = function() {
+      document.getElementById("firstName").focus();
+    };
+  </script>
 </body>
 </html>

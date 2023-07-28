@@ -70,7 +70,7 @@ footer {
   padding: 10px;
   text-align: center;
   color: #000; /* Set the font color to black */
-  background-image: url("Images/battle.png"); /* Correct relative path */
+  background-image: url("Images/battle.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -88,13 +88,14 @@ footer img {
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 2px solid #ccc;
+  border: 2px solid #000; /* Set the table border color to black */
+  color: #000; /* Set the table text color to black */
 }
 
 th, td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000; /* Set the table row borders to black */
 }
 
 thead tr {
