@@ -130,6 +130,32 @@ th[scope="col"] {
   th, td {
     padding: 5px;
   }
+
+  /* Adjust form layout for mobile devices */
+  form {
+    max-width: 300px; /* Adjust the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+
+  /* Adjust label styles for mobile devices */
+  label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add some spacing between labels */
+  }
+
+  /* Adjust input styles for mobile devices */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Set input and textarea width to 100% of the container */
+    box-sizing: border-box; /* Include padding and border in the total width */
+  }
+
+  /* Center the submit button in mobile view */
+  .submit-button {
+    display: block; /* Display the submit button as a block element */
+    margin: 10px auto; /* Center the submit button horizontally */
+  }
 }
 
 /* Media query for printing */
